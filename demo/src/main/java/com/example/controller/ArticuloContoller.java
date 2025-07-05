@@ -1,8 +1,6 @@
-package com.example.demo.controller;
-
-
-import com.example.demo.model.Articulo;
-import com.example.demo.service.ArticuloService;
+package com.example.controller;
+import com.example.model.Articulo;
+import com.example.service.ArticuloService;
 import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;

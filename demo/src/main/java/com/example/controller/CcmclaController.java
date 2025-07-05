@@ -1,7 +1,6 @@
-package com.example.demo.controller;
-
-import com.example.demo.model.Ccmcla;
-import com.example.demo.service.CcmclaService;
+package com.example.controller;
+import com.example.model.Ccmcla;
+import com.example.service.CcmclaService;
 import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;

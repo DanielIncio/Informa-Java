@@ -1,7 +1,6 @@
-package com.example.demo.service;
-
-import com.example.demo.model.Articulo;
-import com.example.demo.repository.ArticuloRepository;
+package com.example.service;
+import com.example.model.Articulo;
+import com.example.repository.ArticuloRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,4 +42,7 @@ public class ArticuloService {
     
     }
     
-}  
+}
+
+
+

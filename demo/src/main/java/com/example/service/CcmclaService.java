@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.service;
 
-import com.example.demo.model.Ccmcla;
-import com.example.demo.repository.CcmclaRepository;
+import com.example.model.Ccmcla;
+import com.example.repository.CcmclaRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class CcmclaService {
         }
         else {
             
-            throw new RuntimeException("Ccmcla no encontrado");
+            throw new RuntimeException("clase no encontrada");
         }
         
     

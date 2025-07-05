@@ -1,5 +1,4 @@
-package com.example.demo.model;
-
+package com.example.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -15,15 +14,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Ccmcla {
-  @Id
-  public String MCODCLA;
-  public String MDESCRIP;
-  public String MABREVI;
-  public String MCODTPT;
-  public String MCODFAM;
-  public String MCODUSER;
-  public Date MFECUACT;
-  public String MHORUACT;
+public class Ccmtpt {
+    @Id
+    public String MCODTPT;
+    public String MDESCRIP;
+    public String MABREVI;
+    public String MCODUSER;
+    public Date MFECUACT;
+    public String MHORUACT;
     
 }

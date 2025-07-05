@@ -1,7 +1,6 @@
-package com.example.demo.service;
-
-import com.example.demo.model.Ccmfam;
-import com.example.demo.repository.CcmfamRepository;
+package com.example.service;
+import com.example.model.Ccmfam;
+import com.example.repository.CcmfamRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,7 @@ public class CcmfamService {
         }
         else {
             
-            throw new RuntimeException("Ccmfam no encontrado");
+            throw new RuntimeException("familia no encontrada");
         }
         
     
