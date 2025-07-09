@@ -11,6 +11,8 @@
   <name>demo</name>
   <description>Proyecto Spring Boot 3</description>
   <packaging>jar</packaging>
+  
+  
 
   <!-- ⬇️ BOM con versiones compatibles -->
   <parent>
@@ -58,7 +60,13 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    </dependency>
   </dependencies>
+  
 
   <build>
     <plugins>

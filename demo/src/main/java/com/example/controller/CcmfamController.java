@@ -3,7 +3,6 @@ package com.example.controller;
 import com.example.model.Ccmfam;
 import com.example.service.CcmfamService;
 import java.util.List;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -37,8 +36,8 @@ public class CcmfamController {
     }
     
     @DeleteMapping("/{mcodfam}")
-    public void Eliminar(@PathVariable String mcodart){
-      servicio.Eliminar(mcodart);
+    public void Eliminar(@PathVariable String mcodfam){
+      servicio.Eliminar(mcodfam);
     }
     
     @PutMapping()
