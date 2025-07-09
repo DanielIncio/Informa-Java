@@ -30,7 +30,7 @@ public class CcmclaService {
     
     public Ccmcla Modificar(Ccmcla modi){
         
-        Optional<Ccmcla> existente = repo.findById(modi.getMCODCLA());
+        Optional<Ccmcla> existente = repo.findById(modi.getMcodcla());
         if(existente.isPresent()){
             
             return repo.save(modi);
