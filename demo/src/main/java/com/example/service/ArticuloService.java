@@ -1,4 +1,5 @@
 package com.example.service;
+
 import com.example.model.Articulo;
 import com.example.repository.ArticuloRepository;
 import java.util.List;

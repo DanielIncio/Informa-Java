@@ -31,7 +31,6 @@ public class CcmfamController {
     @PostMapping
     public Ccmfam Guardar (@RequestBody Ccmfam fam){
     System.out.println(fam);
-    //Articulo art=new Articulo();
     return servicio.Guardar(fam);   
     }
     

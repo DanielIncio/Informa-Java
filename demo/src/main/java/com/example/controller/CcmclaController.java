@@ -31,7 +31,6 @@ public class CcmclaController {
     @PostMapping
     public Ccmcla Guardar (@RequestBody Ccmcla cla){
     System.out.println(cla);
-    //Articulo art=new Articulo();
     return servicio.Guardar(cla);   
     }
     
