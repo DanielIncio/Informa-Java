@@ -3,7 +3,6 @@ package com.example.controller;
 import com.example.model.Ccmtpt;
 import com.example.service.CcmtptService;
 import java.util.List;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -33,11 +32,10 @@ public class CcmtptController {
     @PostMapping
     public Ccmtpt Guardar (@RequestBody Ccmtpt tpt){
     System.out.println(tpt);
-    //Articulo art=new Articulo();
     return servicio.Guardar(tpt);   
     }
     
-    @DeleteMapping("/{mcodart}")
+    @DeleteMapping("/{mcodtpt}")
     public void Eliminar(@PathVariable String mcodtpt){
       servicio.Eliminar(mcodtpt);
     }

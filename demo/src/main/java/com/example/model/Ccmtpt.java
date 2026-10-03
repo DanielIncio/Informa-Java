@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;//Se usan cuando el @Id es autoincremental o se genera con una secuencia.
 import jakarta.persistence.GenerationType;//Se usan cuando el @Id es autoincremental o se genera con una secuencia.
 import jakarta.persistence.Id;
-import java.util.Date;
+import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,7 +20,10 @@ public class Ccmtpt {
     public String MDESCRIP;
     public String MABREVI;
     public String MCODUSER;
-    public Date MFECUACT;
+    
+    @Column(name = "MFECUACT")
+    private LocalDate mfecuact;
+    
     public String MHORUACT;
     
 }
